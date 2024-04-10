@@ -11,8 +11,10 @@ import { MapsRoutingModule } from './maps-routing.module';
 import { MarkerPageComponent } from './pages/marker-page/marker-page.component';
 import { MiniMapComponent } from './components/mini-map/mini-map.component';
 import { PropertiesPageComponent } from './pages/properties-page/properties-page.component';
-import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { ZoomPageComponent } from './pages/zoom-page/zoom-page.component';
+
+import { CounterComponent } from '../alone/components/counter/counter.component'
+import { SideMenuComponent } from '../alone/components/side-menu/side-menu.component';
 
 
 @NgModule({
@@ -23,11 +25,14 @@ import { ZoomPageComponent } from './pages/zoom-page/zoom-page.component';
     ZoomPageComponent,
     PropertiesPageComponent,
     MiniMapComponent,
-    SideMenuComponent
   ],
   imports: [
     CommonModule,
-    MapsRoutingModule
+    MapsRoutingModule,
+
+    //Standalone components
+    CounterComponent,
+    SideMenuComponent,
   ]
 })
 export class MapsModule { }
