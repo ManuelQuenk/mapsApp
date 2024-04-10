@@ -12,7 +12,7 @@ export class ZoomPageComponent implements AfterViewInit, OnDestroy{
 
   public zoom: number = 10;
   public map?: Map;
-  public currentLngLat: LngLat = new LngLat(-64, -31)
+  public currentLngLat: LngLat = new LngLat(-64.21706407384838, -31.373130544094636)
 
   ngAfterViewInit(): void {
     if ( !this.divMap ) throw 'No elementRef found'
